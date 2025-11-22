@@ -1,0 +1,18 @@
+# Configuration for StarColisoes plugin
+# Set to true to enable collisions for the respective types
+# Note: You can now control arrow collisions as well
+
+enablePlayerCollisions: false
+enableMobCollisions: false
+enableEntityCollisions: false
+enableArrowCollisions: true
+
+# List of projectile types that can collide with entities when enableArrowCollisions is true
+# Supported: ARROW, SNOWBALL, EGG, ENDER_PEARL, FIREBALL, SMALL_FIREBALL, WITHER_SKULL, THROWN_EXP_BOTTLE, SPLASH_POTION, LINGERING_POTION
+arrowCollidableProjectiles:
+  - ARROW
+  - SNOWBALL
+
+# Blacklist of entity types that should NOT be collidable even if enableArrowCollisions is true
+# Use entity type names like SKELETON, ZOMBIE, etc. Leave empty to allow all.
+arrowCollisionBlacklist: []
